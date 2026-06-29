@@ -101,7 +101,11 @@ function DetalleEjercicio() {
 
       {/* Hero */}
       <div className="mx-4 bg-gray-900 border border-gray-800 rounded-2xl p-8 text-center mb-4">
-        <div className="text-6xl mb-4">🧘</div>
+        <img 
+          src={`/ejercicios/${ejercicio.nombre.toLowerCase().replace(/\s+/g, '-').replace(/\//g, '-')}.jpg`}
+          alt={ejercicio.nombre}
+          className="w-full max-w-xs mx-auto rounded-xl mb-4 object-contain"
+          onError={(e) => { e.target.style.display = 'none' }}/>
         <h2 className="text-2xl font-bold text-emerald-400 mb-2">{ejercicio.nombre}</h2>
         <div className="flex items-center justify-center gap-2 mt-2 flex-wrap">
           <span className={`text-xs px-3 py-1 rounded-full ${coloresGrupo[ejercicio.grupo]}`}>

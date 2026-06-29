@@ -36,4 +36,4 @@ export const ejercicios = [
 ]
 
 export const grupos = ["supino", "sentado", "prono", "lateral", "avanzados"]
-export const dificultades = ["principiante", "intermedio", "avanzado"]
+export const dificultades = ["principiante", "intermedio", "avanzado"]      
